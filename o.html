@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1"><br></p>
+<p class="p2">&lt;!DOCTYPE html&gt;</p>
+<p class="p2">&lt;html lang="sq"&gt;</p>
+<p class="p2">&lt;head&gt;</p>
+<p class="p2">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p2">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p2">&lt;title&gt;Thellësia e Heshtjes&lt;/title&gt;</p>
+<p class="p2">&lt;style&gt;</p>
+<p class="p2">*{box-sizing:border-box}</p>
+<p class="p2">body{</p>
+<p class="p2"><span class="Apple-converted-space">  </span>margin:0;min-height:100vh;color:#eaf5fa;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>font-family:Georgia,'Times New Roman',serif;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>background:linear-gradient(180deg,#254c61,#102938,#03090f);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>transition:background 2s;overflow-x:hidden</p>
+<p class="p2">}</p>
+<p class="p2">#ocean{</p>
+<p class="p2"><span class="Apple-converted-space">  </span>min-height:100vh;position:relative;overflow:hidden;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>display:flex;align-items:center;justify-content:center;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>padding:32px 18px</p>
+<p class="p2">}</p>
+<p class="p2">.glow{</p>
+<p class="p2"><span class="Apple-converted-space">  </span>position:fixed;width:320px;height:320px;border-radius:50%;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>background:#a8e7ff;opacity:.12;filter:blur(100px);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>top:-120px;left:calc(50% - 160px);pointer-events:none;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>transition:opacity 2s</p>
+<p class="p2">}</p>
+<p class="p2">.particle{</p>
+<p class="p2"><span class="Apple-converted-space">  </span>position:fixed;bottom:-20px;width:3px;height:3px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>background:#c8edff;border-radius:50%;opacity:.4;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>animation:rise linear infinite;pointer-events:none</p>
+<p class="p2">}</p>
+<p class="p2">@keyframes rise{</p>
+<p class="p2"><span class="Apple-converted-space">  </span>from{transform:translateY(0);opacity:0}</p>
+<p class="p2"><span class="Apple-converted-space">  </span>20%{opacity:.5}to{transform:translateY(-110vh);opacity:0}</p>
+<p class="p2">}</p>
+<p class="p2">.card{</p>
+<p class="p2"><span class="Apple-converted-space">  </span>width:min(100%,620px);text-align:center;position:relative;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>padding:38px 26px;z-index:2;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>border:1px solid #ffffff22;border-radius:24px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>background:#07162280;backdrop-filter:blur(12px);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>box-shadow:0 20px 80px #0005;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>animation:appear 1.2s ease</p>
+<p class="p2">}</p>
+<p class="p2">@keyframes appear{</p>
+<p class="p2"><span class="Apple-converted-space">  </span>from{opacity:0;transform:translateY(16px)}</p>
+<p class="p2"><span class="Apple-converted-space">  </span>to{opacity:1;transform:translateY(0)}</p>
+<p class="p2">}</p>
+<p class="p2">.small{</p>
+<p class="p2"><span class="Apple-converted-space">  </span>font:11px Arial,sans-serif;letter-spacing:4px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>color:#9bcddd;text-transform:uppercase</p>
+<p class="p2">}</p>
+<p class="p2">h1{font-size:clamp(29px,6vw,43px);font-weight:normal;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>line-height:1.2;margin:24px 0}</p>
+<p class="p2">#message{</p>
+<p class="p2"><span class="Apple-converted-space">  </span>font-size:19px;line-height:1.9;color:#d5e5ec;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>white-space:pre-line;min-height:150px</p>
+<p class="p2">}</p>
+<p class="p2">#depth{font:12px Arial,sans-serif;color:#83afc1;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>letter-spacing:3px;margin:28px 0}</p>
+<p class="p2">button{</p>
+<p class="p2"><span class="Apple-converted-space">  </span>border:1px solid #b4d9e855;background:#d9f3ff0c;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>color:#eaf8ff;padding:13px 21px;border-radius:30px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>cursor:pointer;font-size:14px;margin:5px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>transition:background .3s,transform .3s</p>
+<p class="p2">}</p>
+<p class="p2">button:hover{background:#b9eaff25;transform:translateY(-2px)}</p>
+<p class="p2">#back{display:none}</p>
+<p class="p2">footer{font:10px Arial,sans-serif;color:#7595a5;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>margin-top:26px;letter-spacing:2px}</p>
+<p class="p2">@media(max-width:480px){</p>
+<p class="p2"><span class="Apple-converted-space"> </span>.card{padding:30px 20px}</p>
+<p class="p2"><span class="Apple-converted-space"> </span>#message{font-size:17px}</p>
+<p class="p2">}</p>
+<p class="p2">&lt;/style&gt;</p>
+<p class="p2">&lt;/head&gt;</p>
+<p class="p2">&lt;body&gt;</p>
+<p class="p2">&lt;div id="ocean"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;div class="glow" id="glow"&gt;&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;main class="card" id="card"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;div class="small" id="label"&gt;NJË UDHËTIM NË HESHTJE&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;h1 id="title"&gt;Jo çdo dritë është e destinuar të qëndrojë.&lt;/h1&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;div id="message"&gt;</p>
+<p class="p2">Ka gjëra që nuk lindin për të përfunduar keq.</p>
+<p class="p2">Ndonjëherë, ato thjesht nuk janë të destinuara të vazhdojnë.</p>
+<p class="p1"><br></p>
+<p class="p2">Nëse dëshiron të kuptosh heshtjen time,</p>
+<p class="p2">duhet të zbresësh pak më thellë.</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;div id="depth"&gt;0 METRA NËN SIPËRFAQE&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;button id="next" onclick="descend()"&gt;Zbrit më thellë ↓&lt;/button&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;button id="back" onclick="surface()"&gt;Kthehu në sipërfaqe ↑&lt;/button&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;footer&gt;JO ÇDO HESHTJE ËSHTË MUNGESË NDJENJASH&lt;/footer&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
+<p class="p2">&lt;/div&gt;</p>
+<p class="p2">&lt;script&gt;</p>
+<p class="p2">const levels=[</p>
+<p class="p2">{</p>
+<p class="p2"><span class="Apple-converted-space"> </span>label:"100 M · UJI FILLON TË FTOHET",</p>
+<p class="p2"><span class="Apple-converted-space"> </span>title:"Unë nuk jam aq e ftohtë sa dukem.",</p>
+<p class="p2"><span class="Apple-converted-space"> </span>message:"Ndoshta po të duket sikur pas kësaj qetësie nuk ka asgjë. Por e vërteta është se mund të jem një njeri me shumë dritë, me shumë butësi dhe me shumë dashuri për të dhënë.\n\nVetëm se jo çdo ndjenjë e bukur është një premtim për të ardhmen.",</p>
+<p class="p2"><span class="Apple-converted-space"> </span>depth:"100 METRA NËN SIPËRFAQE",color:"#18394c",glow:.09</p>
+<p class="p2">},</p>
+<p class="p2">{</p>
+<p class="p2"><span class="Apple-converted-space"> </span>label:"500 M · KU DIELLI ZBEHET",</p>
+<p class="p2"><span class="Apple-converted-space"> </span>title:"Të vlerësosh dikë nuk do të thotë ta mbash.",</p>
+<p class="p2"><span class="Apple-converted-space"> </span>message:"Mund të më pëlqejë mënyra si flet. Mund të vlerësoj njeriun që je. Mund të jem e lumtur që rrugët tona u kryqëzuan.\n\nPor nuk dua që këto gjëra të të bëjnë të mendosh se unë mund të të premtoj diçka që ende nuk e shoh për ne.",</p>
+<p class="p2"><span class="Apple-converted-space"> </span>depth:"500 METRA NËN SIPËRFAQE",color:"#102735",glow:.055</p>
+<p class="p2">},</p>
+<p class="p2">{</p>
+<p class="p2"><span class="Apple-converted-space"> </span>label:"1 200 M · HESHTJA",</p>
+<p class="p2"><span class="Apple-converted-space"> </span>title:"Ndoshta rrugët tona nuk shkojnë në të njëjtin drejtim.",</p>
+<p class="p2"><span class="Apple-converted-space"> </span>message:"Dhe kjo është e vështira për t'u pranuar: dikush mund të jetë i mirë, mund të ketë vlerë, mund të të bëjë të buzëqeshësh… dhe përsëri të mos jetë njeriu me të cilin e imagjinon të ardhmen.\n\nNuk është një gjykim për ty. Është sinqeriteti im për ne.",</p>
+<p class="p2"><span class="Apple-converted-space"> </span>depth:"1 200 METRA NËN SIPËRFAQE",color:"#0b1b28",glow:.025</p>
+<p class="p2">},</p>
+<p class="p2">{</p>
+<p class="p2"><span class="Apple-converted-space"> </span>label:"3 000 M · ERRËSIRA",</p>
+<p class="p2"><span class="Apple-converted-space"> </span>title:"Nuk dua që të presësh për mua.",</p>
+<p class="p2"><span class="Apple-converted-space"> </span>message:"Nuk dua që ditët e tua të mbushen me pritje, që shpresat e tua të varen nga një ndoshta, apo që ti të refuzosh mundësi të tjera sepse mendon se një ditë unë do të jem gati.\n\nNdoshta diku është dikush që do të të zgjedhë pa pasur nevojë të bindë veten. Dikush me të cilin e ardhmja nuk do të jetë një pyetje pa përgjigje.",</p>
+<p class="p2"><span class="Apple-converted-space"> </span>depth:"3 000 METRA NËN SIPËRFAQE",color:"#07131e",glow:.008</p>
+<p class="p2">},</p>
+<p class="p2">{</p>
+<p class="p2"><span class="Apple-converted-space"> </span>label:"6 000 M · AFËR FUNDİT",</p>
+<p class="p2"><span class="Apple-converted-space"> </span>title:"Nuk dua të humbasim kohën duke pritur një të ardhme që nuk e shoh.",</p>
+<p class="p2"><span class="Apple-converted-space"> </span>message:"Ti meriton të dish ku qëndron. Dhe unë nuk dua të të mbaj pranë vetëm sepse është bukur të të kem në jetën time.\n\nNuk do të ishte e drejtë të të jepja shpresa vetëm sepse nuk dua të të humbas. Sepse të mbash dikë pranë pa qenë e sigurt se dëshiron të ecësh me të është një mënyrë tjetër për ta lënduar.",</p>
+<p class="p2"><span class="Apple-converted-space"> </span>depth:"6 000 METRA NËN SIPËRFAQE",color:"#040a10",glow:0</p>
+<p class="p2">},</p>
+<p class="p2">{</p>
+<p class="p2"><span class="Apple-converted-space"> </span>label:"FUNDİ I OQEANIT · E VËRTETA",</p>
+<p class="p2"><span class="Apple-converted-space"> </span>title:"Unë nuk jam pa dritë. Thjesht nuk dua të të humbasësh në errësirën time.",</p>
+<p class="p2"><span class="Apple-converted-space"> </span>message:"Nuk po të them se nuk je mjaftueshëm. Nuk po të them se nuk mund të ketë diçka të bukur mes nesh.\n\nPo të them se nuk arrij ta shoh një të ardhme tonën dhe nuk dua të të kërkoj të investosh zemrën tënde në diçka për të cilën nuk mund të të jap siguri.\n\nNdoshta një ditë do ta kuptosh se ftohtësia ime nuk ishte mungesë e një zemre. Ishte përpjekja ime për të mos të të lënduar më vonë, duke të lënë të shpresoje sot.\n\nTë uroj të gjesh dikë me të cilin nuk do të pyesësh veten nëse ka një të ardhme. Dikë që do të të zgjedhë me të njëjtën siguri me të cilën ti do ta zgjedhësh atë.\n\nDhe nëse kjo histori përfundon këtu, dua që të përfundojë me respekt, jo me inat.\n\nNdonjëherë, të mos vazhdosh me dikë nuk do të thotë se ai nuk kishte vlerë. Do të thotë se nuk dëshiron t'i premtosh një rrugë që nuk mund ta ecësh deri në fund.",</p>
+<p class="p2"><span class="Apple-converted-space"> </span>depth:"THELLËSIA MAKSIMALE · PA PREMTIME",color:"#02060a",glow:0</p>
+<p class="p2">}</p>
+<p class="p2">];</p>
+<p class="p2">let index=-1;</p>
+<p class="p2">function show(level){</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.body.style.background=level.color;</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.getElementById("ocean").style.background=</p>
+<p class="p2"><span class="Apple-converted-space"> </span>"linear-gradient(180deg,"+level.color+",#02060a)";</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.getElementById("glow").style.opacity=level.glow;</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.getElementById("label").textContent=level.label;</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.getElementById("title").textContent=level.title;</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.getElementById("message").textContent=level.message;</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.getElementById("depth").textContent=level.depth;</p>
+<p class="p2"><span class="Apple-converted-space"> </span>const card=document.getElementById("card");</p>
+<p class="p2"><span class="Apple-converted-space"> </span>card.style.animation="none";</p>
+<p class="p2"><span class="Apple-converted-space"> </span>void card.offsetWidth;</p>
+<p class="p2"><span class="Apple-converted-space"> </span>card.style.animation="appear 1.2s ease";</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.getElementById("back").style.display="inline-block";</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.getElementById("next").textContent=</p>
+<p class="p2"><span class="Apple-converted-space"> </span>index===levels.length-1?"Lexoje edhe një herë ↻":"Zbrit më thellë ↓";</p>
+<p class="p2">}</p>
+<p class="p2">function descend(){</p>
+<p class="p2"><span class="Apple-converted-space"> </span>if(index===levels.length-1){</p>
+<p class="p2"><span class="Apple-converted-space">  </span>index=-1;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>document.getElementById("next").textContent="Zbrit më thellë ↓";</p>
+<p class="p2"><span class="Apple-converted-space">  </span>document.getElementById("back").style.display="none";</p>
+<p class="p2"><span class="Apple-converted-space">  </span>document.getElementById("label").textContent="NJË UDHËTIM NË HESHTJE";</p>
+<p class="p2"><span class="Apple-converted-space">  </span>document.getElementById("title").textContent="Jo çdo dritë është e destinuar të qëndrojë.";</p>
+<p class="p2"><span class="Apple-converted-space">  </span>document.getElementById("message").textContent=</p>
+<p class="p2"><span class="Apple-converted-space">  </span>"Ka gjëra që nuk lindin për të përfunduar keq.\nNdonjëherë, ato thjesht nuk janë të destinuara të vazhdojnë.\n\nNëse dëshiron të kuptosh heshtjen time,\nduhet të zbresësh pak më thellë.";</p>
+<p class="p2"><span class="Apple-converted-space">  </span>document.getElementById("depth").textContent="0 METRA NËN SIPËRFAQE";</p>
+<p class="p2"><span class="Apple-converted-space">  </span>document.body.style.background="";</p>
+<p class="p2"><span class="Apple-converted-space">  </span>document.getElementById("ocean").style.background="";</p>
+<p class="p2"><span class="Apple-converted-space">  </span>document.getElementById("glow").style.opacity=".12";</p>
+<p class="p2"><span class="Apple-converted-space">  </span>return;</p>
+<p class="p2"><span class="Apple-converted-space"> </span>}</p>
+<p class="p2"><span class="Apple-converted-space"> </span>index++;</p>
+<p class="p2"><span class="Apple-converted-space"> </span>show(levels[index]);</p>
+<p class="p2">}</p>
+<p class="p2">function surface(){</p>
+<p class="p2"><span class="Apple-converted-space"> </span>index=-1;</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.getElementById("next").textContent="Zbrit më thellë ↓";</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.getElementById("back").style.display="none";</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.getElementById("label").textContent="NJË UDHËTIM NË HESHTJE";</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.getElementById("title").textContent="Jo çdo dritë është e destinuar të qëndrojë.";</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.getElementById("message").textContent=</p>
+<p class="p2"><span class="Apple-converted-space"> </span>"Ka gjëra që nuk lindin për të përfunduar keq.\nNdonjëherë, ato thjesht nuk janë të destinuara të vazhdojnë.\n\nNëse dëshiron të kuptosh heshtjen time,\nduhet të zbresësh pak më thellë.";</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.getElementById("depth").textContent="0 METRA NËN SIPËRFAQE";</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.body.style.background="";</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.getElementById("ocean").style.background="";</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.getElementById("glow").style.opacity=".12";</p>
+<p class="p2">}</p>
+<p class="p2">for(let i=0;i&lt;32;i++){</p>
+<p class="p2"><span class="Apple-converted-space"> </span>const p=document.createElement("i");</p>
+<p class="p2"><span class="Apple-converted-space"> </span>p.className="particle";</p>
+<p class="p2"><span class="Apple-converted-space"> </span>p.style.left=Math.random()*100+"%";</p>
+<p class="p2"><span class="Apple-converted-space"> </span>p.style.animationDuration=(8+Math.random()*16)+"s";</p>
+<p class="p2"><span class="Apple-converted-space"> </span>p.style.animationDelay=(-Math.random()*20)+"s";</p>
+<p class="p2"><span class="Apple-converted-space"> </span>p.style.opacity=Math.random()*.5;</p>
+<p class="p2"><span class="Apple-converted-space"> </span>document.body.appendChild(p);</p>
+<p class="p2">}</p>
+<p class="p2">&lt;/script&gt;</p>
+<p class="p2">&lt;/body&gt;</p>
+<p class="p2">&lt;/html&gt;</p>
+</body>
+</html>
